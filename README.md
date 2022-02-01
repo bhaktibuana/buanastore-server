@@ -14,10 +14,10 @@ const db = mysql.createPool({
   host: "YOUR_MYSQL_HOST", // "localhost" by default
   user: "YOUR_MYSQL_USER", // "root" by default
   password: "YOUR_MYSQL_PASSWORD",
-  database: "buana_store_db",
+  database: "buanastore",
 });
 
-exports.db = db;
+module.exports = { db };
 ```
 Change value of **host**, **user** and **password** to your MySQL configuration.
 
