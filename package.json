@@ -1,0 +1,27 @@
+{
+  "name": "buanastore-server",
+  "version": "1.0.0",
+  "description": "buanastore-server is a server side of Buana Store mini-project from Dibimbing course. This project is built with ExpressJs framework and uses MySQL as the database.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaktibuana/buanastore-server.git"
+  },
+  "author": "Bhakti Mega Buana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaktibuana/buanastore-server/issues"
+  },
+  "homepage": "https://github.com/bhaktibuana/buanastore-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  }
+}
