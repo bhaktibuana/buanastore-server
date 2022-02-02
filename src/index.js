@@ -78,6 +78,20 @@ app.get("/get/product-thumbnail-category/:index", (req, res) => {
   });
 });
 
+// get product detail for product modal
+app.get("/get/product-detail", (req, res) => {
+  const code = req.query.code;
+
+  const dbQuery = `SELECT pc.code, p.product_name, p.price, d.discount_value, p.description FROM product_code AS pc JOIN product AS p ON pc.product_id = p.id JOIN discount AS d ON pc.code = d.product_code_code WHERE pc.code = ?;`;
+  db.query(dbQuery, [code], (err, result) => {
+    if (err) {
+      res.status(500).json(err);
+    } else {
+      res.json(result);
+    }
+  });
+});
+
 app.listen(PORT, () => {
   console.log("Server is listening on", PORT);
 });
