@@ -193,6 +193,55 @@ app.get("/get/user-verify", (req, res) => {
 });
 
 // check available user for signin
+app.post("/post/user-signin", (req, res) => {
+  const email = req.body.email;
+  const password = crypto
+    .createHash("sha256")
+    .update(req.body.password)
+    .digest("hex");
+
+  const dbQuery = `SELECT * FROM user WHERE email = ? AND password = ?`;
+  db.query(dbQuery, [email, password], (err, result) => {
+    if (err) {
+      res.status(500).json(err);
+    } else {
+      if (result.length === 0) {
+        res.json({
+          auth: false,
+          message: "Wrong email or password.",
+        });
+      } else {
+        if (result[0]["is_verified"] === 0) {
+          res.json({
+            auth: false,
+            message: "Please verify your account.",
+          });
+        } else {
+          const token = jwt.sign(
+            {
+              id: result[0]["id"],
+              firstName: result[0]["first_name"],
+              lastName: result[0]["last_name"],
+              email: result[0]["email"],
+            },
+            process.env.JWT_SECRET_KEY
+          );
+
+          res.json({
+            auth: true,
+            token: token,
+            user: {
+              id: result[0]["id"],
+              firstName: result[0]["first_name"],
+              lastName: result[0]["last_name"],
+              email: result[0]["email"],
+            },
+          });
+        }
+      }
+    }
+  });
+});
 
 app.listen(PORT, () => {
   console.log("Server is listening on", PORT);
