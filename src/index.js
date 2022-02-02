@@ -107,6 +107,8 @@ app.post("/post/user-signup", (req, res) => {
       .digest("hex"),
   };
 
+  const baseUlr = req.protocol + "://" + req.get("host");
+
   const dbIsUserExistQuery = `SELECT COUNT(*) AS count FROM user WHERE email = ?`;
   db.query(dbIsUserExistQuery, [userObj.email], (err, result) => {
     if (err) {
@@ -115,7 +117,7 @@ app.post("/post/user-signup", (req, res) => {
       if (result[0]["count"] === 1) {
         res.json({ message: "User already exist! Use another email." });
       } else {
-        sendConfirmationEmail(userObj)
+        sendConfirmationEmail(userObj, baseUlr)
           .then((result) => {
             const dbQuery = `INSERT INTO user (first_name, last_name, email, password) VALUES (?, ?, ?, ?);`;
 
