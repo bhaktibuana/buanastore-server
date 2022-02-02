@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const crypto = require("crypto");
+const jwt = require("jsonwebtoken");
 const { db } = require("./services/dbConnection");
 const { sendConfirmationEmail } = require("./services/emailServices");
 const PORT = process.env.PORT || 3001;
@@ -145,6 +146,48 @@ app.post("/post/user-signup", (req, res) => {
             })
           );
       }
+    }
+  });
+});
+
+// verify user email
+app.get("/get/user-verify", (req, res) => {
+  const token = req.query.token;
+
+  jwt.verify(token, process.env.JWT_SECRET_KEY, (err, decoded) => {
+    if (err) {
+      res.json({
+        auth: false,
+        message: "Failed to verify.",
+      });
+    } else {
+      const dbVerifyCheckQuery = `SELECT is_verified FROM user WHERE email = ?`;
+
+      db.query(dbVerifyCheckQuery, [decoded.email], (err, result) => {
+        if (err) {
+          res.status(500).json(err);
+        } else {
+          if (result[0]["is_verified"] === 1) {
+            res.json({
+              auth: true,
+              message: "Account already verified.",
+            });
+          } else {
+            const dbVerifyUpdateQuery = `UPDATE user SET is_verified = true, updated_at = NOW() WHERE email = ?`;
+
+            db.query(dbVerifyUpdateQuery, [decoded.email], (err, result) => {
+              if (err) {
+                res.status(500).json(err);
+              } else {
+                res.json({
+                  auth: true,
+                  message: "Account verified.",
+                });
+              }
+            });
+          }
+        }
+      });
     }
   });
 });

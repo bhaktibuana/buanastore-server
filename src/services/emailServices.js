@@ -21,7 +21,7 @@ const sendConfirmationEmail = async (object) => {
       process.env.JWT_SECRET_KEY
     );
 
-    const url = `http://localhost:3001/verify/${token}`;
+    const url = `http://localhost:3001/get/user-verify?token=${token}`;
 
     const accessToken = await oAuth2Client.getAccessToken();
 
