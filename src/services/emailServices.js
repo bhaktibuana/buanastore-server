@@ -10,7 +10,7 @@ const oAuth2Client = new google.auth.OAuth2(
 );
 oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
-const sendConfirmationEmail = async (object) => {
+const sendConfirmationEmail = async (object, baseUrl) => {
   try {
     const token = jwt.sign(
       {
@@ -21,7 +21,7 @@ const sendConfirmationEmail = async (object) => {
       process.env.JWT_SECRET_KEY
     );
 
-    const url = `http://localhost:3001/get/user-verify?token=${token}`;
+    const url = `${baseUrl}/get/user-verify?token=${token}`;
 
     const accessToken = await oAuth2Client.getAccessToken();
 
