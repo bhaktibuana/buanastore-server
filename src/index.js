@@ -2,7 +2,9 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const crypto = require("crypto");
 const { db } = require("./services/dbConnection");
+const { sendConfirmationEmail } = require("./services/emailServices");
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
@@ -91,6 +93,63 @@ app.get("/get/product-detail", (req, res) => {
     }
   });
 });
+
+// insert new user for signup
+app.post("/post/user-signup", (req, res) => {
+  const userObj = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    password: crypto
+      .createHash("sha256")
+      .update(req.body.password)
+      .digest("hex"),
+  };
+
+  const dbIsUserExistQuery = `SELECT COUNT(*) AS count FROM user WHERE email = ?`;
+  db.query(dbIsUserExistQuery, [userObj.email], (err, result) => {
+    if (err) {
+      res.status(500).json(err);
+    } else {
+      if (result[0]["count"] === 1) {
+        res.json({ message: "User already exist! Use another email." });
+      } else {
+        sendConfirmationEmail(userObj)
+          .then((result) => {
+            const dbQuery = `INSERT INTO user (first_name, last_name, email, password) VALUES (?, ?, ?, ?);`;
+
+            db.query(
+              dbQuery,
+              [
+                userObj.firstName,
+                userObj.lastName,
+                userObj.email,
+                userObj.password,
+              ],
+              (err, result) => {
+                if (err) {
+                  res.status(500).json(err);
+                } else {
+                  res.json({
+                    message:
+                      "Registration success! Please check your email and verify your account.",
+                  });
+                }
+              }
+            );
+          })
+          .catch((error) =>
+            res.json({
+              message:
+                "Oops, there is a little technical problem. Please try again later.",
+            })
+          );
+      }
+    }
+  });
+});
+
+// check available user for signin
 
 app.listen(PORT, () => {
   console.log("Server is listening on", PORT);
