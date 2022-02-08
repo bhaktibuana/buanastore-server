@@ -6,7 +6,7 @@ In the root directory run `npm install` on your terminal.
 
 ###### Database configuration
 - Import **./dbBackup/buanastore.sql** file into your MySQL Database.
-- Open **dbConnection.js** in the **./src/services/** directory and you will see the following code:
+- Open **dbConnection.js** in the **./src/config/** directory and you will see the following code:
 ```javascript
 const mysql = require("mysql");
 
@@ -17,7 +17,7 @@ const db = mysql.createPool({
   database: "buanastore",
 });
 
-module.exports = { db };
+module.exports = db;
 ```
 Change value of **host**, **user** and **password** to your MySQL configuration.
 

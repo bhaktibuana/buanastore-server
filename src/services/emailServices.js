@@ -14,14 +14,12 @@ const sendConfirmationEmail = async (object, baseUrl) => {
   try {
     const token = jwt.sign(
       {
-        first_name: object.firstName,
-        last_name: object.lastName,
         email: object.email,
       },
       process.env.JWT_SECRET_KEY
     );
 
-    const url = `${baseUrl}/get/user-verify?token=${token}`;
+    const url = `${baseUrl}/account/verify?token=${token}`;
 
     const accessToken = await oAuth2Client.getAccessToken();
 
@@ -43,7 +41,7 @@ const sendConfirmationEmail = async (object, baseUrl) => {
       subject: "[Buana Store] Please verify your account",
       text: "",
       html: `
-        <h3>Hey ${object.firstName} ${object.lastName}</h3>
+        <h3>Hey ${object.first_name} ${object.last_name}</h3>
         <br>
         <p>Please click link bellow to verify your account.</p>
         <br>

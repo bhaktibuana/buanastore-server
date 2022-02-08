@@ -4,7 +4,7 @@
   "description": "buanastore-server is a server side of Buana Store mini-project from Dibimbing course. This project is built with ExpressJs framework and uses MySQL as the database.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/index.js",
+    "start": "nodemon ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
     "nodemailer": "^6.7.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "validatorjs": "^3.22.1"
   }
 }
