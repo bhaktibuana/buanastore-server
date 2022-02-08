@@ -7,4 +7,4 @@ const db = mysql.createPool({
   database: "buanastore",
 });
 
-module.exports = { db };
+module.exports = db;
