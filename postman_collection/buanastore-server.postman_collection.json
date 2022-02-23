@@ -1,0 +1,534 @@
+{
+	"info": {
+		"_postman_id": "1ccfacf2-68f7-4323-acfa-67963acfda91",
+		"name": "buanastore-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "count all product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/product/count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "count product with category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/product/category/count?key1=t-shirts&key2=female",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product",
+						"category",
+						"count"
+					],
+					"query": [
+						{
+							"key": "key1",
+							"value": "t-shirts"
+						},
+						{
+							"key": "key2",
+							"value": "female"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get 10 list of products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/product/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get 10 list of products with category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/product/category/0?key1=t-shirts&key2=female",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product",
+						"category",
+						"0"
+					],
+					"query": [
+						{
+							"key": "key1",
+							"value": "t-shirts"
+						},
+						{
+							"key": "key2",
+							"value": "female"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/product/detail?code=BK-001-F-L",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product",
+						"detail"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "BK-001-F-L"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Hyo Joo",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Han",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hanhyojoo123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qwerty12345",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "qwerty12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account verify",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/account/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NTM1MDU1fQ.XSONnPvYsG2ocf9gmSLdnCJV3wqfJDi7RREGvVGrxJs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"account",
+						"verify"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NTM1MDU1fQ.XSONnPvYsG2ocf9gmSLdnCJV3wqfJDi7RREGvVGrxJs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "hanhyojoo123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qwerty12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add wishlist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkJoYWt0aSIsImxhc3RfbmFtZSI6Ik1lZ2EgQnVhbmEiLCJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NjA1NDExLCJleHAiOjE2NDYyMTAyMTF9.I26zjTCYIi4rXzXQ-CO1Z0yYoMK0QXXyZl0Y580iEts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_code",
+							"value": "UY-001-M-L",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/wishlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"wishlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get wishlist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkJoYWt0aSIsImxhc3RfbmFtZSI6Ik1lZ2EgQnVhbmEiLCJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NjA1NDExLCJleHAiOjE2NDYyMTAyMTF9.I26zjTCYIi4rXzXQ-CO1Z0yYoMK0QXXyZl0Y580iEts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/wishlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"wishlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "soft delete wishlist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkJoYWt0aSIsImxhc3RfbmFtZSI6Ik1lZ2EgQnVhbmEiLCJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NjA1NDExLCJleHAiOjE2NDYyMTAyMTF9.I26zjTCYIi4rXzXQ-CO1Z0yYoMK0QXXyZl0Y580iEts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_code",
+							"value": "UY-001-M-L",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/wishlist/softDelete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"wishlist",
+						"softDelete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get selected wishlist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkJoYWt0aSIsImxhc3RfbmFtZSI6Ik1lZ2EgQnVhbmEiLCJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NjA1NDExLCJleHAiOjE2NDYyMTAyMTF9.I26zjTCYIi4rXzXQ-CO1Z0yYoMK0QXXyZl0Y580iEts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/wishlist/checkSelected?product_code=UY-001-M-L",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"wishlist",
+						"checkSelected"
+					],
+					"query": [
+						{
+							"key": "product_code",
+							"value": "UY-001-M-L"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkJoYWt0aSIsImxhc3RfbmFtZSI6Ik1lZ2EgQnVhbmEiLCJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NjA1NDExLCJleHAiOjE2NDYyMTAyMTF9.I26zjTCYIi4rXzXQ-CO1Z0yYoMK0QXXyZl0Y580iEts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_code",
+							"value": "UY-001-M-L",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkJoYWt0aSIsImxhc3RfbmFtZSI6Ik1lZ2EgQnVhbmEiLCJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NjA1NDExLCJleHAiOjE2NDYyMTAyMTF9.I26zjTCYIi4rXzXQ-CO1Z0yYoMK0QXXyZl0Y580iEts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "soft delete cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkJoYWt0aSIsImxhc3RfbmFtZSI6Ik1lZ2EgQnVhbmEiLCJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NjA1NDExLCJleHAiOjE2NDYyMTAyMTF9.I26zjTCYIi4rXzXQ-CO1Z0yYoMK0QXXyZl0Y580iEts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_code",
+							"value": "UY-001-M-L",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/cart/softDelete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cart",
+						"softDelete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get selected cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkJoYWt0aSIsImxhc3RfbmFtZSI6Ik1lZ2EgQnVhbmEiLCJlbWFpbCI6ImJoYWt0aWJ1YW5hMTlAZ21haWwuY29tIiwiaWF0IjoxNjQ1NjA1NDExLCJleHAiOjE2NDYyMTAyMTF9.I26zjTCYIi4rXzXQ-CO1Z0yYoMK0QXXyZl0Y580iEts",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/cart/checkSelected?product_code=UY-001-M-L",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cart",
+						"checkSelected"
+					],
+					"query": [
+						{
+							"key": "product_code",
+							"value": "UY-001-M-L"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
