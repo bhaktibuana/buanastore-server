@@ -4,7 +4,9 @@
   "description": "buanastore-server is a server side of Buana Store mini-project from Dibimbing course. This project is built with ExpressJs framework and uses MySQL as the database.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/app.js",
+    "start": "nodemon ./app.js",
+    "migrate": "node ./db/migration/table.migration.js",
+    "seeder": "node ./db/seeder/data.seeder.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -20,7 +20,6 @@ const sendConfirmationEmail = async (object, baseUrl) => {
     );
 
     const url = `${baseUrl}/account/verify?token=${token}`;
-
     const accessToken = await oAuth2Client.getAccessToken();
 
     const transport = nodemailer.createTransport({
