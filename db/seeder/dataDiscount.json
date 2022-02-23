@@ -1,0 +1,402 @@
+[
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-001-M-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-001-M-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-001-M-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-001-M-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-001-M-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HOV-001-U-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HOV-001-U-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HOV-001-U-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HOV-001-U-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HOV-001-U-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SDS-001-M-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SDS-001-M-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SDS-001-M-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SDS-001-M-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SDS-001-M-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-001-F-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-001-F-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-001-F-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-001-F-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-001-F-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HKV-001-U-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HKV-001-U-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HKV-001-U-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HKV-001-U-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HKV-001-U-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SSS-001-M-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SSS-001-M-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SSS-001-M-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SSS-001-M-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SSS-001-M-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-002-M-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-002-M-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-002-M-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-002-M-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-002-M-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HJV-001-U-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HJV-001-U-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HJV-001-U-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HJV-001-U-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HJV-001-U-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SLC-001-F-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SLC-001-F-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SLC-001-F-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SLC-001-F-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SLC-001-F-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-002-F-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-002-F-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-002-F-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-002-F-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "BK-002-F-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-001-U-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-001-U-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-001-U-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-001-U-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-001-U-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SGS-001-F-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SGS-001-F-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SGS-001-F-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SGS-001-F-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SGS-001-F-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-003-M-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-003-M-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-003-M-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-003-M-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "UY-003-M-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HYV-001-U-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HYV-001-U-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HYV-001-U-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HYV-001-U-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HYV-001-U-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SCR-001-F-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SCR-001-F-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SCR-001-F-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SCR-001-F-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SCR-001-F-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "JV-001-U-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "JV-001-U-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "JV-001-U-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "JV-001-U-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "JV-001-U-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-002-U-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-002-U-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-002-U-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-002-U-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "HSV-002-U-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SHR-001-F-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SHR-001-F-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SHR-001-F-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SHR-001-F-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SHR-001-F-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SC-001-F-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SC-001-F-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SC-001-F-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SC-001-F-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "SC-001-F-XS"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "DN-001-F-XL"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "DN-001-F-L"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "DN-001-F-M"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "DN-001-F-S"
+  },
+  {
+    "discount_value": 30,
+    "product_code_code": "DN-001-F-XS"
+  }
+]

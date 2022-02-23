@@ -1,0 +1,402 @@
+[
+  {
+    "code": "UY-001-M-XL",
+    "product_id": "1"
+  },
+  {
+    "code": "UY-001-M-L",
+    "product_id": "1"
+  },
+  {
+    "code": "UY-001-M-M",
+    "product_id": "1"
+  },
+  {
+    "code": "UY-001-M-S",
+    "product_id": "1"
+  },
+  {
+    "code": "UY-001-M-XS",
+    "product_id": "1"
+  },
+  {
+    "code": "HOV-001-U-XL",
+    "product_id": "2"
+  },
+  {
+    "code": "HOV-001-U-L",
+    "product_id": "2"
+  },
+  {
+    "code": "HOV-001-U-M",
+    "product_id": "2"
+  },
+  {
+    "code": "HOV-001-U-S",
+    "product_id": "2"
+  },
+  {
+    "code": "HOV-001-U-XS",
+    "product_id": "2"
+  },
+  {
+    "code": "SDS-001-M-XL",
+    "product_id": "3"
+  },
+  {
+    "code": "SDS-001-M-L",
+    "product_id": "3"
+  },
+  {
+    "code": "SDS-001-M-M",
+    "product_id": "3"
+  },
+  {
+    "code": "SDS-001-M-S",
+    "product_id": "3"
+  },
+  {
+    "code": "SDS-001-M-XS",
+    "product_id": "3"
+  },
+  {
+    "code": "BK-001-F-XL",
+    "product_id": "4"
+  },
+  {
+    "code": "BK-001-F-L",
+    "product_id": "4"
+  },
+  {
+    "code": "BK-001-F-M",
+    "product_id": "4"
+  },
+  {
+    "code": "BK-001-F-S",
+    "product_id": "4"
+  },
+  {
+    "code": "BK-001-F-XS",
+    "product_id": "4"
+  },
+  {
+    "code": "HKV-001-U-XL",
+    "product_id": "5"
+  },
+  {
+    "code": "HKV-001-U-L",
+    "product_id": "5"
+  },
+  {
+    "code": "HKV-001-U-M",
+    "product_id": "5"
+  },
+  {
+    "code": "HKV-001-U-S",
+    "product_id": "5"
+  },
+  {
+    "code": "HKV-001-U-XS",
+    "product_id": "5"
+  },
+  {
+    "code": "SSS-001-M-XL",
+    "product_id": "6"
+  },
+  {
+    "code": "SSS-001-M-L",
+    "product_id": "6"
+  },
+  {
+    "code": "SSS-001-M-M",
+    "product_id": "6"
+  },
+  {
+    "code": "SSS-001-M-S",
+    "product_id": "6"
+  },
+  {
+    "code": "SSS-001-M-XS",
+    "product_id": "6"
+  },
+  {
+    "code": "UY-002-M-XL",
+    "product_id": "7"
+  },
+  {
+    "code": "UY-002-M-L",
+    "product_id": "7"
+  },
+  {
+    "code": "UY-002-M-M",
+    "product_id": "7"
+  },
+  {
+    "code": "UY-002-M-S",
+    "product_id": "7"
+  },
+  {
+    "code": "UY-002-M-XS",
+    "product_id": "7"
+  },
+  {
+    "code": "HJV-001-U-XL",
+    "product_id": "8"
+  },
+  {
+    "code": "HJV-001-U-L",
+    "product_id": "8"
+  },
+  {
+    "code": "HJV-001-U-M",
+    "product_id": "8"
+  },
+  {
+    "code": "HJV-001-U-S",
+    "product_id": "8"
+  },
+  {
+    "code": "HJV-001-U-XS",
+    "product_id": "8"
+  },
+  {
+    "code": "SLC-001-F-XL",
+    "product_id": "9"
+  },
+  {
+    "code": "SLC-001-F-L",
+    "product_id": "9"
+  },
+  {
+    "code": "SLC-001-F-M",
+    "product_id": "9"
+  },
+  {
+    "code": "SLC-001-F-S",
+    "product_id": "9"
+  },
+  {
+    "code": "SLC-001-F-XS",
+    "product_id": "9"
+  },
+  {
+    "code": "BK-002-F-XL",
+    "product_id": "10"
+  },
+  {
+    "code": "BK-002-F-L",
+    "product_id": "10"
+  },
+  {
+    "code": "BK-002-F-M",
+    "product_id": "10"
+  },
+  {
+    "code": "BK-002-F-S",
+    "product_id": "10"
+  },
+  {
+    "code": "BK-002-F-XS",
+    "product_id": "10"
+  },
+  {
+    "code": "HSV-001-U-XL",
+    "product_id": "11"
+  },
+  {
+    "code": "HSV-001-U-L",
+    "product_id": "11"
+  },
+  {
+    "code": "HSV-001-U-M",
+    "product_id": "11"
+  },
+  {
+    "code": "HSV-001-U-S",
+    "product_id": "11"
+  },
+  {
+    "code": "HSV-001-U-XS",
+    "product_id": "11"
+  },
+  {
+    "code": "SGS-001-F-XL",
+    "product_id": "12"
+  },
+  {
+    "code": "SGS-001-F-L",
+    "product_id": "12"
+  },
+  {
+    "code": "SGS-001-F-M",
+    "product_id": "12"
+  },
+  {
+    "code": "SGS-001-F-S",
+    "product_id": "12"
+  },
+  {
+    "code": "SGS-001-F-XS",
+    "product_id": "12"
+  },
+  {
+    "code": "UY-003-M-XL",
+    "product_id": "13"
+  },
+  {
+    "code": "UY-003-M-L",
+    "product_id": "13"
+  },
+  {
+    "code": "UY-003-M-M",
+    "product_id": "13"
+  },
+  {
+    "code": "UY-003-M-S",
+    "product_id": "13"
+  },
+  {
+    "code": "UY-003-M-XS",
+    "product_id": "13"
+  },
+  {
+    "code": "HYV-001-U-XL",
+    "product_id": "14"
+  },
+  {
+    "code": "HYV-001-U-L",
+    "product_id": "14"
+  },
+  {
+    "code": "HYV-001-U-M",
+    "product_id": "14"
+  },
+  {
+    "code": "HYV-001-U-S",
+    "product_id": "14"
+  },
+  {
+    "code": "HYV-001-U-XS",
+    "product_id": "14"
+  },
+  {
+    "code": "SCR-001-F-XL",
+    "product_id": "15"
+  },
+  {
+    "code": "SCR-001-F-L",
+    "product_id": "15"
+  },
+  {
+    "code": "SCR-001-F-M",
+    "product_id": "15"
+  },
+  {
+    "code": "SCR-001-F-S",
+    "product_id": "15"
+  },
+  {
+    "code": "SCR-001-F-XS",
+    "product_id": "15"
+  },
+  {
+    "code": "JV-001-U-XL",
+    "product_id": "16"
+  },
+  {
+    "code": "JV-001-U-L",
+    "product_id": "16"
+  },
+  {
+    "code": "JV-001-U-M",
+    "product_id": "16"
+  },
+  {
+    "code": "JV-001-U-S",
+    "product_id": "16"
+  },
+  {
+    "code": "JV-001-U-XS",
+    "product_id": "16"
+  },
+  {
+    "code": "HSV-002-U-XL",
+    "product_id": "17"
+  },
+  {
+    "code": "HSV-002-U-L",
+    "product_id": "17"
+  },
+  {
+    "code": "HSV-002-U-M",
+    "product_id": "17"
+  },
+  {
+    "code": "HSV-002-U-S",
+    "product_id": "17"
+  },
+  {
+    "code": "HSV-002-U-XS",
+    "product_id": "17"
+  },
+  {
+    "code": "SHR-001-F-XL",
+    "product_id": "18"
+  },
+  {
+    "code": "SHR-001-F-L",
+    "product_id": "18"
+  },
+  {
+    "code": "SHR-001-F-M",
+    "product_id": "18"
+  },
+  {
+    "code": "SHR-001-F-S",
+    "product_id": "18"
+  },
+  {
+    "code": "SHR-001-F-XS",
+    "product_id": "18"
+  },
+  {
+    "code": "SC-001-F-XL",
+    "product_id": "19"
+  },
+  {
+    "code": "SC-001-F-L",
+    "product_id": "19"
+  },
+  {
+    "code": "SC-001-F-M",
+    "product_id": "19"
+  },
+  {
+    "code": "SC-001-F-S",
+    "product_id": "19"
+  },
+  {
+    "code": "SC-001-F-XS",
+    "product_id": "19"
+  },
+  {
+    "code": "DN-001-F-XL",
+    "product_id": "20"
+  },
+  {
+    "code": "DN-001-F-L",
+    "product_id": "20"
+  },
+  {
+    "code": "DN-001-F-M",
+    "product_id": "20"
+  },
+  {
+    "code": "DN-001-F-S",
+    "product_id": "20"
+  },
+  {
+    "code": "DN-001-F-XS",
+    "product_id": "20"
+  }
+]
