@@ -16,7 +16,7 @@ const updateIsDeleted = (params, callback) => {
 };
 
 const get = (params, callback) => {
-  const selectQuery = `SELECT user_id, product_code_code AS product_code FROM wishlist WHERE user_id = ? AND is_deleted = FALSE;`;
+  const selectQuery = `SELECT w.user_id, w.product_code_code AS product_code, p.product_name FROM wishlist AS w JOIN product_code AS pc ON pc.code = w.product_code_code JOIN product AS p ON p.id = pc.product_id WHERE w.user_id = ? AND w.is_deleted = FALSE ORDER BY w.updated_at;`;
   db.query(selectQuery, params, callback);
 };
 
