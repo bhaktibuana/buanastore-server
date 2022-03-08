@@ -16,7 +16,7 @@ const updateIsDeleted = (params, callback) => {
 };
 
 const get = (params, callback) => {
-  const selectQuery = `SELECT user_id, product_code_code AS product_code FROM cart WHERE user_id = ? AND is_deleted = FALSE;`;
+  const selectQuery = `SELECT c.user_id, c.product_code_code AS product_code, p.product_name FROM cart AS c JOIN product_code AS pc ON pc.code = c.product_code_code JOIN product AS p ON p.id = pc.product_id WHERE c.user_id = ? AND c.is_deleted = FALSE ORDER BY c.updated_at;`;
   db.query(selectQuery, params, callback);
 };
 

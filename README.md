@@ -400,7 +400,8 @@ _Response:_ JSON
 [
   {
     "user_id": "integer",
-    "product_code": "string"
+    "product_code": "string",
+    "product_name": "string"
   }
 ]
 ```
@@ -673,7 +674,8 @@ _Response:_ JSON
 [
   {
     "user_id": "integer",
-    "product_code": "string"
+    "product_code": "string",
+    "product_name": "string"
   }
 ]
 ```
